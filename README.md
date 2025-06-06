@@ -1,9 +1,13 @@
-# Inter-VLAN Routing
+# Routing and Switching Projects; a practical demonstration of CCNA level networking
+All projects were created in Cisco Packet Tracer. All network topologies and device configurations were written by myself. 
+
+
+## Inter-VLAN Routing
 This lab demonstrates the configuration of multiple VLANs on a switch and the ability to route between different VLANs through a 'router-on-a-stick' configuration using virtual sub-interfaces.
 Appropriate IP addresses were configured for each device and these were then placed within relevant subnets. 
 
 
-## Objective 
+### Objective 
 All PCS must be able to ping each other, despite being in different subnets and VLANs.
 
 
