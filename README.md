@@ -1,4 +1,4 @@
-# Routing and Switching: an exploration of CCNA-level networking concepts
+# Routing and Switching: exploring CCNA-level networking concepts
 All projects were created in Cisco Packet Tracer. All network topologies and device configurations were created and written by myself. 
 
 
@@ -7,27 +7,35 @@ This lab demonstrates the configuration of multiple VLANs on a switch and the ab
 Appropriate IP addresses were configured for each device and these were then placed within relevant subnets. 
 
 
-### Objective 
+## Objective 
 All PCs must be able to successfully ping each other from different subnets and VLANs.
 
 
 ## Topology
 
+![inter vlan routing 3](https://github.com/user-attachments/assets/bcf72ef4-9ffc-4295-954a-fa91dac094cd)
 
 
+## Network Breakdown
 
-![inter vlan routing](https://github.com/user-attachments/assets/2d566474-bf32-4f21-a12f-da201ec3d362)
+![image](https://github.com/user-attachments/assets/6421fee3-49e2-4d5d-9421-81c8bb4451bd)
+
+
 
 
 #### Router 1 ROAS Configuration:
 
 interface GigabitEthernet0/0/0.10  
 encapsulation dot1Q 10  
-ip address 10.1.1.6 255.255.255.240  
+ip address 10.1.1.14 255.255.255.240  
 
 interface GigabitEthernet0/0/0.20  
 encapsulation dot1Q 20  
-ip address 10.1.2.6 255.255.255.240  
+ip address 10.1.2.14 255.255.255.240  
+
+interface GigabitEthernet0/0/0.30  
+ encapsulation dot1Q 30  
+ ip address 10.1.1.30 255.255.255.240  
 
 #### Switch 1 Configuration:  
 interface FastEthernet0/1  
@@ -50,7 +58,7 @@ interface FastEthernet0/5
 
  #### Switch 2 Configuration:
 
- interface FastEthernet0/1  
+interface FastEthernet0/1  
  switchport mode trunk  
 !  
 interface FastEthernet0/2  
@@ -70,6 +78,14 @@ interface FastEthernet0/5
  switchport mode access  
 !  
 interface FastEthernet0/6  
- switchport access vlan 10  
+ switchport access vlan 30  
+ switchport mode access  
+!  
+interface FastEthernet0/7  
+ switchport access vlan 30  
+ switchport mode access  
+!  
+interface FastEthernet0/8  
+ switchport access vlan 30  
  switchport mode access  
  
