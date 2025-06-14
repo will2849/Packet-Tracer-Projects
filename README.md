@@ -20,8 +20,17 @@ All PCs must be able to successfully ping each other from different VLANs, subne
 
 ![image](https://github.com/user-attachments/assets/6421fee3-49e2-4d5d-9421-81c8bb4451bd)
 
+## Tasks carried out:
 
+- Appropriate IP addresses assigned to PCs statically.
+- Default gateways set as the last usable IP address within a subnet.
+- Trunk links configured between both switches and also the router.
+- VLANs configured on both swithces and named (Sales, Engineering, Security).
+- Switch ports connecting to PCs were configured as access ports and assigned to the relevant VLANs.
+- Three sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
+- Verified connectivity by ensuring all PCs were able to ping each other. 
 
+### Device Running-Configs
 
 #### Router 1 ROAS Configuration:
 
