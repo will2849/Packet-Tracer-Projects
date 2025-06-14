@@ -1,5 +1,5 @@
-# Routing and Switching: exploring CCNA-level networking concepts
-All projects were created in Cisco Packet Tracer. All network topologies and device configurations were created and written by myself. 
+# Routing and Switching: an exploration of CCNA-level networking concepts
+All projects were created in Cisco Packet Tracer.
 
 
 ## Inter-VLAN Routing
@@ -8,7 +8,7 @@ Appropriate IP addresses were configured for each device and these were then pla
 
 
 ## Objective 
-All PCs must be able to successfully ping each other from different subnets and VLANs.
+All PCs must be able to successfully ping each other from different VLANs, subnets or networks.
 
 
 ## Topology
