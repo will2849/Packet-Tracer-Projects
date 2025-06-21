@@ -98,3 +98,20 @@ interface FastEthernet0/8
  switchport access vlan 30  
  switchport mode access  
  
+## DHCP Server Configuration
+In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allows for devices in different
+VLANS/subnets to ping each other via inter-VLAN routing.
+
+## Objective
+For devices in VLAN 10 and VLAN 30 to receive IP addresses from DHCP server based in VLAN 20 (70.4.2.5).
+
+## Topology 
+
+![intervlan routing + DHCP server](https://github.com/user-attachments/assets/994741f1-4e11-4f93-9c8f-7e0b92e4a9cb)
+
+## Network Breakdown
+
+![image](https://github.com/user-attachments/assets/c0fe19ff-8838-450c-9372-97d8914531d6)
+
+
+## Tasks Carried Out
