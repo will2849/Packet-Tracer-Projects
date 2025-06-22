@@ -26,12 +26,14 @@ All PCs must be able to successfully ping each other from different VLANs, subne
 - Default gateways set as the last usable IP address within a subnet.
 - Trunk links configured between both switches and also the router.
 - VLANs configured on both swithces and named (Sales, Engineering, Security).
-- Switch ports connecting to PCs were configured as access ports and assigned to the relevant VLANs.
+- Switchports connecting to end-user devices were configured as access ports and assigned to the relevant VLANs.
 - Three sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
-- Verified connectivity by ensuring all PCs were able to ping each other. 
+- Verified connectivity by ensuring all PCs were able to ping each other.  
+
+  
 
  
-## DHCP Server Configuration
+## DHCP Server Configuration  
 In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allows for devices in different
 VLANS/subnets to ping each other via inter-VLAN routing.
 
@@ -48,3 +50,14 @@ For devices in VLAN 10 and VLAN 30 to receive IP addresses from DHCP server base
 
 
 ### Tasks Carried Out
+
+- Subnets were created and default gateways set as the last usable IP address within each subnet.
+- Trunk links were configured between the switches and the router.
+- Three separate sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
+- VLANs were configured and named on each switch (Security, Engineering and HR).
+- All switchports connecting to end-user devices were configured as access ports and assigned to the relevant VLANs.
+- A DHCP server was added to the 70.4.2.0/28 subnet (70.4.2.5).
+- DHCP address pools were configured for each VLAN. The default gateway was set as the last usable IP address within the address pool.
+- 'Pool 1: Security' was configured with the address range 10.25.2.1 - 10.25.2.14.
+- 'Pool 2: Engineering' was configured with the address range 192.168.7.1 - 192.168.7.6.
+- 'Pool 3: HR' was configured with the address range 70.4.2.1 - 70.4.2.14.
