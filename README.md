@@ -61,3 +61,14 @@ For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based
 - 'Pool 1: Security' was configured with the address range 10.25.2.1 - 10.25.2.14.
 - 'Pool 2: Engineering' was configured with the address range 192.168.7.1 - 192.168.7.6.
 - 'Pool 3: HR' was configured with the address range 70.4.2.1 - 70.4.2.14.
+
+## OSPF Configuration
+Demonstration of the popular link-state routing protocol, Open Shortest Path First (OSPF), is featured in this lab. Each router is configured to operate within the backbone area of the network and to advertise routes within one single Autonomous System. 
+
+### Objective 
+For each router to establish a full neighbor adjacency with the other routers and 
+
+### Network Topology
+
+![OSPF2](https://github.com/user-attachments/assets/dd73eeb0-9c73-4225-a955-50b8e47813eb)
+
