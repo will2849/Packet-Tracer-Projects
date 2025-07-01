@@ -25,20 +25,20 @@ All PCs must be able to successfully ping each other from different VLANs, subne
 - Appropriate IP addresses assigned to PCs statically.
 - Default gateways set as the last usable IP address within a subnet.
 - Trunk links configured between both switches and also the router.
-- VLANs configured on both swithces and named (Sales, Engineering, Security).
+- VLANs configured on both swithces and appropriately named (Sales, Engineering, Security).
 - Switchports connecting to end-user devices were configured as access ports and assigned to the relevant VLANs.
 - Three sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
-- Verified connectivity by ensuring all PCs were able to ping each other.  
+- Connectivity was verified by ensuring all PCs were able to ping each other.  
 
   
 
  
 ## DHCP Server Configuration  
-In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allows for devices in different
+In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allowed for devices in different
 VLANS/subnets to ping each other via inter-VLAN routing.
 
 ### Objective
-For devices in VLAN 10 and VLAN 30 to receive IP addresses from DHCP server based in VLAN 20 (70.4.2.5).
+For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based in VLAN 30 (70.4.2.5).
 
 ### Network Topology 
 
@@ -51,7 +51,7 @@ For devices in VLAN 10 and VLAN 30 to receive IP addresses from DHCP server base
 
 ### Tasks Carried Out
 
-- Subnets were created and default gateways set as the last usable IP address within each subnet.
+- Subnets were created and default gateways set as the last usable IP address of each subnet.
 - Trunk links were configured between the switches and the router.
 - Three separate sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
 - VLANs were configured and named on each switch (Security, Engineering and HR).
