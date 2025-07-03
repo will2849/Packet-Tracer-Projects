@@ -63,10 +63,10 @@ For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based
 - 'Pool 3: HR' was configured with the address range 70.4.2.1 - 70.4.2.14.
 
 ## OSPF Configuration
-This project demonstrates the use of Open Shortest Path First (OSPF); a dynamic link-state routing protocol frequently used in enterprise networks to facilitate efficient routing between routers. Each router is configured to operate within the backbone area and all routes are advertised within one single Autonomous-System.
+This project demonstrates the use of Open Shortest Path First (OSPF); a dynamic link-state routing protocol that is frequently used in enterprise networks to facilitate efficient routing between routers. Each router is configured to operate within the backbone area and all routes are advertised within one single Autonomous-System.
 
 ### Objective 
-For each router to establish a full neighbor adjacency with the other routers and 
+For each router to establish a full-neighbor-adjacency with the other routers and for routing information to be propagated between the routers through link-state-advertisements. All PCs must be able to ping each other. 
 
 ### Network Topology
 
