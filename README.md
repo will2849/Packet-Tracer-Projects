@@ -1,6 +1,7 @@
 # Routing and Switching: an exploration of CCNA-level networking concepts
-All projects were created in Cisco Packet Tracer.
+All projects were created in Cisco Packet Tracer. All network topologies and network device configurations were created and written by myself. 
 
+<br> <br> 
 
 ## Inter-VLAN Routing
 This lab demonstrates the configuration of multiple VLANs on a switch and the ability to route between different VLANs through a 'router-on-a-stick' configuration using virtual sub-interfaces.
@@ -30,8 +31,7 @@ All PCs must be able to successfully ping each other from different VLANs, subne
 - Three sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
 - Connectivity was verified by ensuring all PCs were able to ping each other.  
 
-  
-
+ <br> <br> <br> 
  
 ## DHCP Server Configuration  
 In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allowed for devices in different
@@ -61,6 +61,8 @@ For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based
 - 'Pool 1: Security' was configured with the address range 10.25.2.1 - 10.25.2.14.
 - 'Pool 2: Engineering' was configured with the address range 192.168.7.1 - 192.168.7.6.
 - 'Pool 3: HR' was configured with the address range 70.4.2.1 - 70.4.2.14.
+
+<br> <br> <br> 
 
 ## OSPF Configuration
 This project demonstrates the use of Open Shortest Path First (OSPF); a dynamic link-state routing protocol that is frequently used in enterprise networks to facilitate dynamic routing. Each router is configured to operate within the backbone area of Area 0 and all routes are advertised within one single Autonomous-System.
