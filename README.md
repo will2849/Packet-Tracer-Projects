@@ -66,7 +66,7 @@ For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based
 <br> <br> <br> 
 
 ## OSPF Configuration
-This project demonstrates the use of Open Shortest Path First (OSPF); a dynamic link-state routing protocol that is frequently used in enterprise networks to facilitate dynamic routing. Each router is configured to operate within the backbone area of Area 0 and all routes are advertised within one single Autonomous-System.
+This project demonstrates the use of Open Shortest Path First (OSPF); a dynamic link-state routing protocol that is frequently used in enterprise networks to facilitate dynamic routing. Each router is configured to operate within the network backbone (Area 0) and all routes are advertised within one single Autonomous-System.
 
 ### Objective 
 For each router to establish a full-neighbor-adjacency with the other routers and for routing information to be exchanged through link-state-advertisements. All PCs must be able to ping each other in order to verify connectivity and that dynamic routing is working as expected.
