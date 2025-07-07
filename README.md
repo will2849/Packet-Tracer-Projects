@@ -84,5 +84,5 @@ For each router to establish a full-neighbor-adjacency with the other routers an
 - Connected the devices by ethernet cable and configured router interfaces with appropriate subnets, IP addresses and subnet masks. Router interfaces were enabled once basic configurations were complete.
 - Enabled OSPF routing on all routers.
 - Advertised each directly connected network by using 'network' commands and the appropriate wildcard subnet masks (each network was advertised within the network backbone of Area 0).
-- Verified that OSPF neighbor adjacencies had been established between all routers. Routing tables were also checked on each router to verify this.
+- Verified that OSPF neighbor adjacencies had been established between all routers. Routing tables were checked on each router to verify this.
 - Connectivity between hosts was tested to verify that dynamic routing was in place and working as expected.
