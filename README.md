@@ -5,7 +5,7 @@ All projects were created in Cisco Packet Tracer. All network topologies and net
 
 ## Inter-VLAN Routing  
 
-This lab demonstrates a 'router-on-a-stick' configuration, which allows for traffic to be routed between multiple separate VLANs through configuring multiple logical sub-interfaces over a single physical interface.  
+This lab demonstrates a 'router-on-a-stick' configuration, which allows for traffic to be routed between separate VLANs through configuring multiple logical sub-interfaces over a single physical interface.  
 
 By configuring inter-VLAN routing, communication between VLANs is enabled, while still retaining the core benefits of VLANs; improved network segmentation, reduced broadcast traffic and better network security and isolation between departments.
 
