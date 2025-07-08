@@ -24,13 +24,13 @@ All PCs must be able to successfully ping each other from different VLANs, subne
 
 ### Tasks carried out:
 
-- Appropriate IP addresses assigned to PCs statically.
-- Default gateways set as the last usable IP address within a subnet.
-- Trunk links configured between both switches and also the router.
-- VLANs configured on both swithces and appropriately named (Sales, Engineering, Security).
-- Switchports connecting to end-user devices were configured as access ports and assigned to the relevant VLANs.
-- Three sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
-- Connectivity was verified by ensuring all PCs were able to ping each other.  
+- Statically assigned appropriate IP addresses to PCs.
+- Set default gateways as the last usable IP address within each subnet.
+- Configured VLANs on both swithces (named Sales, Engineering, Security).
+- Configured trunk links between both switches and also the router.
+- Configured all switchports connecting to end-user devices as access ports and assigned these to the relevant VLANs.
+- Three logical sub-interfaces were configured on the single physical interface connected to Router 1. This allowed traffic to be routed between the different VLANs.
+- Verified connectivity by ensuring all PCs were able to ping each other.  
 
  <br> <br> <br> 
  
