@@ -35,11 +35,13 @@ All PCs must be able to successfully ping each other from different VLANs, subne
  <br> <br> <br> 
  
 ## DHCP Server Configuration  
-In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allowed for devices in different
-VLANS/subnets to ping each other via inter-VLAN routing.
+In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allowed for devices in different VLANS/subnets to ping each other via inter-VLAN routing.
+
+This lab features the implementation of a DHCP server to dynamically assign IP addresses to end user devices across three VLANs, each belonging to a different network or subnet. Three separate IP address pools were configured on the DHCP server to facilitate dynamic address allocation to PCs (the address pool used depending upon which VLAN the end user device belongs to).  
+A router-on-a-stick configuration allows for devices in different VLANS/subnets to ping each other via inter-VLAN routing.
 
 ### Objective
-For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based in VLAN 30 (70.4.2.5).
+For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based in VLAN 30 (70.4.2.5). All devices must be able to successfully ping each other. 
 
 ### Network Topology 
 
