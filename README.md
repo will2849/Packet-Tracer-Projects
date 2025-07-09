@@ -35,13 +35,15 @@ All PCs must be able to successfully ping each other from different VLANs, subne
  <br> <br> <br> 
  
 ## DHCP Server Configuration  
-In this lab, a DHCP server is configured to automatically assign IP addresses to devices across several different VLANs. A router-on-a-stick configuration allowed for devices in different VLANS/subnets to ping each other via inter-VLAN routing.
 
-This lab features the implementation of a DHCP server to dynamically assign IP addresses to end user devices across three VLANs, each belonging to a different network or subnet. Three separate IP address pools were configured on the DHCP server to facilitate dynamic address allocation to PCs (the address pool used depending upon which VLAN the end user device belongs to).  
-A router-on-a-stick configuration allows for devices in different VLANS/subnets to ping each other via inter-VLAN routing.
+This lab features the implementation of a centralized DHCP server to dynamically assign IP addresses to end user devices across three VLANs. Each VLAN belongs to a different subnet.  
+
+The DHCP server was configured with three distinct IP address pools, each corresponding with a different VLAN/subnet. This setup facilitates dynamic IP address allocation to PCs throughout the network, eliminating the need for manual, static IP address configuration.  
+
+Inter-VLAN routing was also configured using a 'router-on-a-stick' setup, whereby several logical interfaces are created over one single physical interface.  
 
 ### Objective
-For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based in VLAN 30 (70.4.2.5). All devices must be able to successfully ping each other. 
+The successful outcome will be seamless IP address assignment for all end-user devices (from DHCP Server: 70.4.2.5) and the ability for all devices to ping each other successfully from any VLAN.
 
 ### Network Topology 
 
@@ -59,7 +61,7 @@ For devices in VLAN 10, 20 and 30 to receive IP addresses from DHCP server based
 - Three separate sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
 - VLANs were configured and named on each switch (Security, Engineering and HR).
 - All switchports connecting to end-user devices were configured as access ports and assigned to the relevant VLANs.
-- A DHCP server was added to the 70.4.2.0/28 subnet (70.4.2.5).
+- A DHCP server was added to the 70.4.2.0/28 subnet (IP address: 70.4.2.5).
 - DHCP address pools were configured for each VLAN. The default gateway was set as the last usable IP address within the address pool.
 - 'Pool 1: Security' was configured with the address range 10.25.2.1 - 10.25.2.14.
 - 'Pool 2: Engineering' was configured with the address range 192.168.7.1 - 192.168.7.6.
