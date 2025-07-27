@@ -7,7 +7,7 @@ All projects were created in Cisco Packet Tracer. All network topologies and net
 
 This lab demonstrates a 'router-on-a-stick' configuration, which allows for traffic to be routed between separate VLANs through configuring multiple logical sub-interfaces over a single physical interface.  
 
-By configuring inter-VLAN routing, communication between VLANs is enabled, while still retaining the core benefits of VLANs; improved network segmentation, reduced broadcast traffic and better network security and isolation between departments.
+By configuring inter-VLAN routing, devices in separate VLANs are able to communicate with one another, while still retaining the core benefits of VLANs; improved network segmentation, reduced broadcast traffic and better network security and isolation between departments.
 
 ### Objective 
 All PCs must be able to successfully ping each other from different VLANs, subnets or networks.
@@ -26,17 +26,17 @@ All PCs must be able to successfully ping each other from different VLANs, subne
 
 - Statically assigned appropriate IP addresses to PCs.
 - Set default gateways as the last usable IP address within each subnet.
-- Configured VLANs on both switches (named Sales, Engineering, Security).
+- Configured VLANs on both switches (Sales, Engineering, Security).
 - Configured trunk links between both switches and also the router.
 - Configured all switchports connecting to end-user devices as access ports and assigned these to the relevant VLANs.
-- Three logical sub-interfaces were configured on the single physical interface connected to Router 1. This allowed traffic to be routed between the different VLANs.
+- Configured three logical sub-interfaces on the single physical interface connected to Router 1, allowing traffic to be routed between the different VLANs.
 - Verified connectivity by ensuring all PCs were able to ping each other.  
 
  <br> <br> <br> 
  
 ## DHCP Server Configuration  
 
-This lab features the implementation of a centralized DHCP server to dynamically assign IP addresses to end user devices across three VLANs. Each VLAN belongs to a different subnet.  
+This lab features the implementation of a centralized DHCP server to dynamically assign IP addresses to end user devices across three VLANs.   
 
 The DHCP server was configured with three distinct IP address pools, each corresponding with a different VLAN/subnet. This setup facilitates dynamic IP address allocation to PCs throughout the network, eliminating the need for manual, static IP address configuration.  
 
@@ -57,7 +57,7 @@ The successful outcome will be seamless IP address assignment for all end-user d
 ### Tasks Carried Out
 
 - Subnets were created and default gateways set as the last usable IP address of each subnet.
-- Trunk links were configured between the switches and the router.
+- Trunk links were configured between the switches and also the router.
 - Three separate sub-interfaces were configured on the router to match each subnet and allow inter-VLAN routing.
 - VLANs were configured and named on each switch (Security, Engineering and HR).
 - All switchports connecting to end-user devices were configured as access ports and assigned to the relevant VLANs.
@@ -77,7 +77,8 @@ For each router to establish a full-neighbor-adjacency with the other routers an
 
 ### Network Topology
 
-![OSPF2](https://github.com/user-attachments/assets/dd73eeb0-9c73-4225-a955-50b8e47813eb)
+<img width="1054" height="609" alt="OSPF3" src="https://github.com/user-attachments/assets/201b473a-e27d-459d-b421-4a127dbf8b37" />
+
 
 ### Network Breakdown
 
