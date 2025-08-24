@@ -3,6 +3,29 @@ All projects were created in Cisco Packet Tracer. All network topologies and net
 
 <br> <br> 
 
+## Multi-Site Enterprise Network in Cisco Packet TracerMulti-Site Enterprise Network in Cisco Packet Tracer
+A three-tier network architecture is used here to design and deploy a network connecting two office locations: Office A and Office B. The architecture incorporates core, distribution, and access layers, while the use of robust security, redundancy and routing protocols ensures both scalability and reliability.
+<br> 
+
+### Network Topology  
+
+<br> 
+
+<img width="1127" height="606" alt="MULTI-SITE NETWORK" src="https://github.com/user-attachments/assets/44efb6a4-0fea-40c6-9b6b-b36b0c1968ac" />
+<br> 
+
+For fault-tolerance and redundancy, layer 2 EtherChannels were configured between distribution switches using Port Channel and Cisco’s proprietary PAgP protocol. A Layer 3 EtherChannel was also implemented between core switches for enhanced throughput and load balancing. In addition, HSRPv2 was implemented on the distribution switches to provide seamless failover in the event of a fault and to provide redundancy to the VLANs in each office.
+
+VLAN management was centralized using VTPv2 servers configured on DSWA1 (Office A) and DSWA2 (Office B). All access switches were set as clients, ensuring consistent VLAN configurations across the network.
+
+Rapid PVST+ was deployed on all access and distribution switches to prevent loops and to provide rapid convergence. Both PortFast and BPDU Guard were enabled on all host-facing ports, ensuring fast network access for end devices and protection against rogue switches.
+
+SSHv2 access with maximum RSA key size was enabled for secure remote management of the core router, core switches and access switches. MD5-hashed usernames and passwords were configured on each device along with a 30-minute inactivity timeout on the console lines. All unused ports were disabled. An extended ACL was deployed to allow ICMP messages between PCs in Office A and Office B for testing and diagnostics, while blocking all other direct traffic between the two offices.
+
+Router 1 was configured as a DHCP server and DHCP pools were created for each relevant VLAN in both Office A and Office B. Additional space was purposely left in the scope of each DHCP pool for possible future growth of the departments.
+<br> 
+<br> 
+
 ## Inter-VLAN Routing  
 
 This lab demonstrates a 'router-on-a-stick' configuration, which allows for traffic to be routed between separate VLANs through configuring multiple logical sub-interfaces over a single physical interface.  
